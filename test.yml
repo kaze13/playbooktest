@@ -1,0 +1,6 @@
+---
+- hosts: [172.26.131.135]
+  remote_user: personalize
+  tasks:
+    - name: Ensure the Apache daemon has started
+      copy: src=./a dest=/home/personalize  mode=0644
